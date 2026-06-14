@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="banner.svg" alt="Sentiment Predictor Pro Banner"/>
+<img width="100%" src="banner.png" alt="Sentiment Predictor Pro Banner"/>
 
 # 🧠 Sentiment Predictor Pro
 ### Enterprise-Grade Multi-Modal Sentiment Intelligence Platform
