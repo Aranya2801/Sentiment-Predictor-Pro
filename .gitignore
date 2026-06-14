@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Models (large — use Git LFS)
+models/
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+.cache/
+
+# Data
+data/raw/
+data/processed/
+*.csv
+*.parquet
+!data/samples/
+
+# Environment
+.env
+.env.local
+secrets.yaml
+*.key
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+mlruns/
+
+# Node
+node_modules/
+.next/
+frontend/.next/
+
+# Docker
+docker-compose.override.yml
+
+# Coverage
+.coverage
+htmlcov/
+.pytest_cache/

@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "sentiment-predictor-pro"
+version = "1.0.0"
+description = "Enterprise-Grade Multi-Modal Sentiment Intelligence Platform"
+authors = [{ name = "Sentiment Predictor Pro Team" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["nlp", "sentiment-analysis", "bert", "transformers", "emotion-detection", "explainable-ai"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/sentiment-predictor-pro"
+Documentation = "https://sentiment-pro.vercel.app/docs"
+Repository = "https://github.com/yourusername/sentiment-predictor-pro"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.black]
+line-length = 110
+target-version = ["py310", "py311"]
+
+[tool.isort]
+profile = "black"
+line_length = 110
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
